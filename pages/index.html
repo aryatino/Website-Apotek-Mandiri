@@ -1,109 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apotek Sehat - Solusi Medis Modern</title>
     <!-- Menghubungkan Library Animate.css -->
-    <link rel="stylesheet" href="https://cloudflare.com"/>
+    <link rel="stylesheet" href="https://cloudflare.com" />
     <!-- Menghubungkan CSS Lokal -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigasi Minimalis -->
+    <!-- Navigasi Minimalis dengan Video Background -->
     <header class="animate__animated animate__fadeInDown">
+      <!-- Tag Video untuk Latar Belakang -->
+      <video autoplay loop muted playsinline class="nav-video">
+        <source src="../pages/latarbelakang.mp4" type="video/mp4" />
+        Browser Anda tidak mendukung tag video.
+      </video>
+
+      <!-- Bungkus konten navigasi agar berada di atas video -->
+      <div class="header-content">
         <div class="logo">🏥 Apotek<span>Sehat</span></div>
         <nav>
-            <a href="#home">Beranda</a>
-            <a href="#layanan">Layanan</a>
-            <a href="#produk">Produk</a>
+          <a href="#home">Beranda</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#produk">Produk</a>
         </nav>
         <div class="cta-header">
-            <a href="#kontak" class="btn-secondary">Hubungi Apoteker</a>
+          <a href="#kontak" class="btn-secondary">Hubungi Apoteker</a>
         </div>
+      </div>
     </header>
 
     <!-- Banner Hero Modern -->
     <section id="home" class="hero">
-        <div class="hero-content animate__animated animate__fadeInLeft">
-            <span class="badge">Standar Pelayanan Medis 2026</span>
-            <h1>Akses Obat Asli & <br>Konsultasi Medis Terpercaya</h1>
-            <p>Kami hadir dengan konsep apotek digital yang mengutamakan kecepatan, keamanan, dan keaslian produk kesehatan untuk keluarga Anda.</p>
-            <div class="hero-buttons">
-                <a href="#produk" class="btn-primary">Cari Obat</a>
-                <a href="#layanan" class="btn-link">Pelajari Selengkapnya →</a>
-            </div>
+      <div class="hero-content animate__animated animate__fadeInLeft">
+        <span class="badge">Standar Pelayanan Medis 2026</span>
+        <h1>Akses Obat Asli & <br />Konsultasi Medis Terpercaya</h1>
+        <p>
+          Kami hadir dengan konsep apotek digital yang mengutamakan kecepatan,
+          keamanan, dan keaslian produk kesehatan untuk keluarga Anda.
+        </p>
+        <div class="hero-buttons">
+          <a href="#produk" class="btn-primary">Cari Obat</a>
+          <a href="#layanan" class="btn-link">Pelajari Selengkapnya →</a>
         </div>
-        <div class="hero-image animate__animated animate__fadeInRight">
-            <!-- Gambar ilustrasi medis minimalis -->
-            <img src="https://unsplash.com" alt="Pelayanan Apotek">
-        </div>
+      </div>
+      <div class="hero-image animate__animated animate__fadeInRight">
+        <!-- Mengganti dengan link gambar medis baru yang lebih stabil -->
+        <img src="https://unsplash.com" alt="Pelayanan Apotek Modern" />
+      </div>
     </section>
 
     <!-- Bagian Standar Layanan Medis -->
     <section id="layanan" class="features">
-        <div class="section-title">
-            <h2>Mengapa Memilih Kami?</h2>
-            <p>Seluruh operasional kami berjalan di bawah pengawasan apoteker berlisensi.</p>
+      <div class="section-title">
+        <h2>Mengapa Memilih Kami?</h2>
+        <p>
+          Seluruh operasional kami berjalan di bawah pengawasan apoteker
+          berlisensi.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">🛡️</div>
+          <h3>100% Obat Asli</h3>
+          <p>Suplai langsung dari distributor resmi dan tersegel aman.</p>
         </div>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="icon">🛡️</div>
-                <h3>100% Obat Asli</h3>
-                <p>Suplai langsung dari distributor resmi dan tersegel aman.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">👨‍⚕️</div>
-                <h3>Apoteker Siaga</h3>
-                <p>Konsultasi dosis dan aturan pakai tanpa biaya tambahan.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">⚡</div>
-                <h3>Pengiriman Instan</h3>
-                <p>Sistem antar cepat untuk kebutuhan medis darurat Anda.</p>
-            </div>
+        <div class="feature-card">
+          <div class="icon">👨‍⚕️</div>
+          <h3>Apoteker Siaga</h3>
+          <p>Konsultasi dosis dan aturan pakai tanpa biaya tambahan.</p>
         </div>
+        <div class="feature-card">
+          <div class="icon">⚡</div>
+          <h3>Pengiriman Instan</h3>
+          <p>Sistem antar cepat untuk kebutuhan medis darurat Anda.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Daftar Produk Minimalis -->
     <section id="produk" class="products">
-        <div class="section-title">
-            <h2>Produk Populer</h2>
-            <p>Sediaan obat dan vitamin yang paling banyak dibutuhkan.</p>
+      <div class="section-title">
+        <h2>Produk Populer</h2>
+        <p>Sediaan obat dan vitamin yang paling banyak dibutuhkan.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <span class="category">Vitamin</span>
+          <h3>Vitamin C 1000mg</h3>
+          <p class="price">Rp 15.000</p>
+          <button class="btn-product">Lihat Detail</button>
         </div>
-        <div class="product-grid">
-            
-            <div class="product-card">
-                <span class="category">Vitamin</span>
-                <h3>Vitamin C 1000mg</h3>
-                <p class="price">Rp 15.000</p>
-                <button class="btn-product">Lihat Detail</button>
-            </div>
 
-            <div class="product-card">
-                <span class="category">Obat Bebas</span>
-                <h3>Paracetamol 500mg</h3>
-                <p class="price">Rp 5.000</p>
-                <button class="btn-product">Lihat Detail</button>
-            </div>
-
-            <div class="product-card">
-                <span class="category">Alat Kesehatan</span>
-                <h3>Masker Medis 3-Ply</h3>
-                <p class="price">Rp 35.000</p>
-                <button class="btn-product">Lihat Detail</button>
-            </div>
-
+        <div class="product-card">
+          <span class="category">Obat Bebas</span>
+          <h3>Paracetamol 500mg</h3>
+          <p class="price">Rp 5.000</p>
+          <button class="btn-product">Lihat Detail</button>
         </div>
+
+        <div class="product-card">
+          <span class="category">Alat Kesehatan</span>
+          <h3>Masker Medis 3-Ply</h3>
+          <p class="price">Rp 35.000</p>
+          <button class="btn-product">Lihat Detail</button>
+        </div>
+      </div>
     </section>
 
     <!-- Footer Modern -->
     <footer id="kontak">
-        <div class="footer-content">
-            <p>&copy; 2026 Apotek Sehat. Sesuai standar Kemenkes & Badan Pengawas Obat.</p>
-        </div>
+      <div class="footer-content">
+        <p>
+          &copy; 2026 Apotek Sehat. Sesuai standar Kemenkes & Badan Pengawas
+          Obat.
+        </p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

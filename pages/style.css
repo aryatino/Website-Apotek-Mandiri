@@ -24,32 +24,67 @@ body {
     line-height: 1.6;
 }
 
-/* Navigasi Minimalis */
+/* Navigasi Minimalis dengan Video Background - FIX */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 8%;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #edf2f7;
+    height: 80px; /* Menentukan tinggi navbar tetap */
+    overflow: hidden; /* Wajib: Memotong video agar tidak meluber ke bawah */
+    border-bottom: 1px solid rgba(237, 242, 247, 0.1);
+    display: flex;
+    align-items: center;
+    background-color: #000; /* Warna cadangan jika video sedang loading */
 }
 
+/* Mengatur Posisi Video agar Mengisi Sempurna tanpa Meluber */
+.nav-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Memastikan video proporsional memenuhi area */
+    z-index: 1; 
+    filter: brightness(0.5); /* Membuat video lebih gelap agar teks putih sangat kontras dan terbaca */
+}
+
+/* Memastikan Konten Navigasi Berada Tegas di Atas Video */
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    z-index: 2; /* Angka harus lebih besar dari z-index video */
+    position: relative;
+}
+
+
+/* Memastikan Konten Navigasi Berada di Atas Video */
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    z-index: 2;
+}
+
+/* Menyesuaikan Warna Teks Agar Kontras dengan Video */
 header .logo {
     font-size: 22px;
     font-weight: 700;
-    color: var(--text-color);
+    color: var(--white); /* Diubah ke putih agar terlihat jelas */
 }
 
 header .logo span {
-    color: var(--primary-color);
+    color: #55efc4; /* Warna hijau mint yang lebih terang untuk background gelap */
 }
 
 nav a {
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8); /* Warna teks link menjadi putih transparan */
     text-decoration: none;
     margin: 0 20px;
     font-weight: 500;
@@ -57,8 +92,26 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--primary-color);
+    color: #55efc4;
 }
+
+/* Menyesuaikan Tombol Hubungi Apoteker agar Kontras */
+.btn-secondary {
+    border: 2px solid #55efc4;
+    color: #55efc4;
+    padding: 10px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.2); /* Efek kaca transparan */
+}
+
+.btn-secondary:hover {
+    background-color: #55efc4;
+    color: var(--text-color);
+}
+
 
 /* Tombol-Tombol Khas UI Modern */
 .btn-primary {
