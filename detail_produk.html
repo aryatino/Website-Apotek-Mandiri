@@ -1,114 +1,504 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Obat - Apotek Sehat Modern</title>
-    <!-- Animate.css untuk Transisi Elegan -->
-    <link rel="stylesheet" href="https://cloudflare.com"/>
-    
-    <!-- MENGHUBUNGKAN DENGAN FILE CSS TERPISAH YANG BARU -->
-    <link rel="stylesheet" href="../CSS/detail_produk.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Detail Produk - Apotek Sehat</title>
+
+
+    <!-- ================================= -->
+    <!-- ANIMATE.CSS -->
+    <!-- ================================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
+
+
+    <!-- ================================= -->
+    <!-- FONT AWESOME -->
+    <!-- ================================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- ================================= -->
+    <!-- CSS DETAIL PRODUK -->
+    <!-- ================================= -->
+
+    <link
+        rel="stylesheet"
+        href="CSS/detail_produk.css"
+    >
+
 </head>
+
+
 <body>
 
-    <!-- Navigasi Kembali -->
-    <a href="index.html" class="back-link animate__animated animate__fadeInLeft">← Kembali ke Beranda Apotek</a>
 
-    <!-- Grid Pembungkus Utama -->
+    <!-- ================================= -->
+    <!-- NAVIGASI KEMBALI -->
+    <!-- ================================= -->
+
+    <a
+        href="index.html"
+        class="back-link animate__animated animate__fadeInLeft"
+    >
+        ← Kembali ke Beranda Apotek
+    </a>
+
+
+
+    <!-- ================================= -->
+    <!-- PEMBUNGKUS UTAMA -->
+    <!-- ================================= -->
+
     <div class="product-grid-container">
-        
-        <!-- ================= KOLOM KIRI ================= -->
-        <div class="panel-left animate__animated animate__fadeInLeft">
+
+
+        <!-- ================================= -->
+        <!-- KOLOM KIRI
+        <!-- ================================= -->
+
+        <div
+            class="panel-left animate__animated animate__fadeInLeft"
+        >
+
+            <!-- GAMBAR PRODUK -->
+
             <div class="main-image-box">
-                <img src="https://unsplash.com" alt="Vitamin C 1000mg">
+
+                <img
+                    id="gambar-produk"
+                    src=""
+                    alt="Produk Apotek Sehat"
+                >
+
             </div>
-            
+
+
+            <!-- BADGE KEAMANAN -->
+
             <div class="legal-badges">
-                <div class="badge-row">🛡️ <span>Jaminan 100% Produk Original Asli</span></div>
-                <div class="badge-row">📦 <span>Tersegel Aman - Lolos Standar Kemenkes RI</span></div>
-                <div class="badge-row">🧪 <span>Nomor BPOM: DBL2100100200A1</span></div>
+
+
+                <div class="badge-row">
+
+                    🛡️
+
+                    <span>
+                        Jaminan Produk Original
+                    </span>
+
+                </div>
+
+
+                <div class="badge-row">
+
+                    📦
+
+                    <span>
+                        Tersegel Aman
+                    </span>
+
+                </div>
+
+
+                <div class="badge-row">
+
+                    🧪
+
+                    <span>
+                        Produk Terdaftar & Terjamin
+                    </span>
+
+                </div>
+
+
             </div>
+
         </div>
 
-        <!-- ================= KOLOM KANAN ================= -->
-        <div class="panel-right animate__animated animate__fadeInRight">
-            
-            <!-- Kartu Utama Produk & Harga -->
+
+
+        <!-- ================================= -->
+        <!-- KOLOM KANAN
+        <!-- ================================= -->
+
+        <div
+            class="panel-right animate__animated animate__fadeInRight"
+        >
+
+
+            <!-- ================================= -->
+            <!-- INFORMASI PRODUK
+            <!-- ================================= -->
+
             <div class="card-info-utama">
-                <span class="med-tag">Suplemen Harian</span>
-                <h1 class="title-obat">Vitamin C 1000mg Premium</h1>
-                
+
+
+                <!-- KATEGORI -->
+
+                <span
+                    id="kategori-produk"
+                    class="med-tag"
+                >
+                    Produk
+                </span>
+
+
+                <!-- NAMA -->
+
+                <h1
+                    id="nama-produk"
+                    class="title-obat"
+                >
+                    Memuat produk...
+                </h1>
+
+
+                <!-- RATING -->
+
                 <div class="rating-row">
-                    <span>⭐⭐⭐⭐⭐ <strong>4.9</strong> (142 Ulasan)</span>
-                    <span>•</span>
-                    <span>Terjual 2.5rb+ produk</span>
+
+                    <span>
+
+                        ⭐⭐⭐⭐⭐
+
+                        <strong>
+                            4.9
+                        </strong>
+
+                        (142 Ulasan)
+
+                    </span>
+
+
+                    <span>
+                        •
+                    </span>
+
+
+                    <span>
+                        Produk Terjual
+                    </span>
+
                 </div>
+
+
+
+                <!-- ================================= -->
+                <!-- HARGA -->
+                <!-- ================================= -->
 
                 <div class="box-harga-het">
-                    <span class="het-label">Harga Eceran Tertinggi (HET)</span>
-                    <span class="harga-angka">Rp 20.000</span> <span style="color:#636e72; font-size:14px;">/ Strip</span>
+
+                    <span class="het-label">
+                        Harga Produk
+                    </span>
+
+
+                    <span
+                        id="harga-produk"
+                        class="harga-angka"
+                    >
+                        Rp 0
+                    </span>
+
+
+                    <span
+                        style="
+                            color:#636e72;
+                            font-size:14px;
+                        "
+                    >
+                        / Produk
+                    </span>
+
                 </div>
+
+
+
+                <!-- ================================= -->
+                <!-- JUMLAH + KERANJANG -->
+                <!-- ================================= -->
 
                 <div class="action-area">
+
+
+                    <!-- JUMLAH -->
+
                     <div class="qty-picker">
-                        <button onclick="ubahJumlah(-1)">-</button>
-                        <input type="text" id="jumlah-beli" value="1" readonly>
-                        <button onclick="ubahJumlah(1)">+</button>
+
+
+                        <button
+                            onclick="ubahJumlah(-1)"
+                        >
+                            -
+                        </button>
+
+
+                        <input
+                            type="text"
+                            id="jumlah-beli"
+                            value="1"
+                            readonly
+                        >
+
+
+                        <button
+                            onclick="ubahJumlah(1)"
+                        >
+                            +
+                        </button>
+
+
                     </div>
-                    <button class="btn-beli-hijau">
-                        🛒 Tambah ke Keranjang
+
+
+
+                    <!-- KERANJANG -->
+
+                    <button
+                        class="btn-beli-hijau"
+                        onclick="tambahKeranjang()"
+                    >
+
+                        🛒
+
+                        Tambah ke Keranjang
+
                     </button>
+
+
                 </div>
+
+
             </div>
 
-            <!-- Kartu Spesifikasi Medis Resmi -->
+
+
+            <!-- ================================= -->
+            <!-- SPESIFIKASI MEDIS -->
+            <!-- ================================= -->
+
             <div class="card-spesifikasi-medis">
+
+
+                <!-- MANFAAT -->
+
                 <div class="spec-item">
-                    <h4>📋 Indikasi Umum (Manfaat)</h4>
-                    <p>Membantu memelihara daya tahan tubuh, mencukupi kebutuhan Vitamin C harian, serta mempercepat proses pemulihan setelah sakit.</p>
+
+                    <h4>
+                        📋 Indikasi Umum (Manfaat)
+                    </h4>
+
+
+                    <p id="manfaat-produk">
+
+                        Memuat informasi...
+
+                    </p>
+
                 </div>
+
+
+
+                <!-- DOSIS -->
+
                 <div class="spec-item">
-                    <h4>⚖️ Dosis & Aturan Pakai</h4>
-                    <p>1 tablet sehari. Sebaiknya dikonsumsi setelah makan untuk menjaga kenyamanan lambung.</p>
+
+                    <h4>
+                        ⚖️ Dosis & Aturan Pakai
+                    </h4>
+
+
+                    <p id="dosis-produk">
+
+                        Memuat informasi...
+
+                    </p>
+
                 </div>
+
+
+
+                <!-- PERINGATAN -->
+
                 <div class="spec-item">
-                    <h4>⚠️ Efek Samping & Peringatan</h4>
-                    <p>Konsumsi melebihi dosis dapat memicu sakit perut atau diare ringan. Simpan di tempat sejuk di bawah suhu 30°C.</p>
+
+                    <h4>
+                        ⚠️ Efek Samping & Peringatan
+                    </h4>
+
+
+                    <p id="peringatan-produk">
+
+                        Memuat informasi...
+
+                    </p>
+
                 </div>
+
+
             </div>
+
+
         </div>
 
-        <!-- ================= KOLOM DISKUSI PASIEN (BAWAH) ================= -->
-        <div class="card-diskusi animate__animated animate__fadeInUp">
-            <h3>💬 Ruang Diskusi Obat & Ulasan</h3>
-            
+
+
+        <!-- ================================= -->
+        <!-- DISKUSI & ULASAN -->
+        <!-- ================================= -->
+
+        <div
+            class="card-diskusi animate__animated animate__fadeInUp"
+        >
+
+
+            <h3>
+                💬 Ruang Diskusi Obat & Ulasan
+            </h3>
+
+
+
+            <!-- INPUT ULASAN -->
+
             <div class="box-input-review">
-                <textarea placeholder="Tuliskan ulasan produk atau pertanyaan seputar dosis obat..."></textarea>
-                <button class="btn-kirim-ulasan">Kirim</button>
+
+
+                <textarea
+                    id="input-ulasan"
+                    placeholder="Tuliskan ulasan produk atau pertanyaan seputar produk..."
+                ></textarea>
+
+
+                <button
+                    class="btn-kirim-ulasan"
+                    onclick="kirimUlasan()"
+                >
+                    Kirim
+                </button>
+
+
             </div>
+
+
+
+            <!-- ================================= -->
+            <!-- ULASAN -->
+            <!-- ================================= -->
 
             <div class="list-ulasan">
-                <div class="kartu-ulasan">
-                    <div class="ulasan-header">
-                        <strong>Alan Walker</strong>
-                        <span class="badge-verified">✓ Pembelian Terverifikasi</span>
-                    </div>
-                    <p style="font-size: 13.5px; color:#636e72; margin-top: 5px;">Pengemasan dari apotek sangat aman berlapis bubble wrap. Expired date masih sangat lama tahun 2029.</p>
-                </div>
+
 
                 <div class="kartu-ulasan">
+
+
                     <div class="ulasan-header">
-                        <strong>Apoteker Siaga (Apotek Sehat)</strong>
-                        <span style="color: #0984e3; font-weight: 600; font-size:12px;">🏥 Tim Medis Resmi</span>
+
+                        <strong>
+                            Pelanggan Apotek
+                        </strong>
+
+
+                        <span class="badge-verified">
+
+                            ✓ Pembelian Terverifikasi
+
+                        </span>
+
                     </div>
-                    <p style="font-size: 13.5px; color:#636e72; margin-top: 5px;">Terima kasih telah berbelanja, kak Rian. Pastikan suplemen dikonsumsi secara rutin pada jam yang sama setiap harinya ya.</p>
+
+
+                    <p
+                        style="
+                            font-size:13.5px;
+                            color:#636e72;
+                            margin-top:5px;
+                        "
+                    >
+
+                        Produk sampai dengan aman dan
+                        dikemas dengan baik.
+
+                    </p>
+
                 </div>
+
+
+
+                <div class="kartu-ulasan">
+
+
+                    <div class="ulasan-header">
+
+                        <strong>
+                            Apoteker Siaga
+                        </strong>
+
+
+                        <span
+                            style="
+                                color:#0984e3;
+                                font-weight:600;
+                                font-size:12px;
+                            "
+                        >
+                            🏥 Tim Apotek
+                        </span>
+
+                    </div>
+
+
+                    <p
+                        style="
+                            font-size:13.5px;
+                            color:#636e72;
+                            margin-top:5px;
+                        "
+                    >
+
+                        Jika memiliki pertanyaan mengenai
+                        penggunaan produk, silakan
+                        konsultasikan terlebih dahulu
+                        dengan apoteker.
+
+                    </p>
+
+                </div>
+
+
             </div>
+
+
         </div>
+
+
     </div>
 
-    
-    <script src="/JS/detail_produk.js"></script>
+
+
+    <!-- ================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================= -->
+
+    <script src="JS/detail_produk.js"></script>
+
+
 </body>
+
 </html>
