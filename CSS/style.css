@@ -761,46 +761,33 @@ nav a:hover::after {
    ========================================================= */
 
 .btn-product {
-    width: 100%;
-
-    padding: 13px;
-
-    border: none;
-
-    border-radius: 12px;
-
-    background: #eef5f3;
-
-    color: var(--dark);
-
-    font-family: inherit;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    margin-top: auto;
-
-    transition: all 0.3s ease;
+    background-color: var(--bg-light); /* Mengubah background menjadi Hijau Medis */
+    color           : var(--black); /* Teks putih menjadi sangat kontras di atas hijau */
+    border          : none;
+    padding         : 12px;
+    border-radius   : 8px;
+    font-weight     : 600;
+    cursor          : pointer;
+    width           : 100%;
+    margin-top      : auto;
+    text-align      : center;
+    text-decoration : none;
+    display         : block;
+    transition      : all 0.3s ease;
+    box-shadow      : 0 4px 10px rgba(0, 184, 148, 0.1); /* Memberikan efek bayangan halus */
 }
 
 .btn-product:hover {
-    background: var(--primary);
-
-    color: white;
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 20px rgba(0, 184, 148, 0.2);
+    background-color: var(--primary-dark); /* Hijau sedikit lebih gelap saat disentuh kursor */
+    color: white; 
+    transform       : translateY(-2px); /* Efek melayang modern */
+    box-shadow      : 0 6px 14px rgba(0, 184, 148, 0.2);
 }
 
 
-/* =========================================================
+  /* =========================================================
    FOOTER
-   ========================================================= */
+    =========================================================  */
 
 footer {
     background: #101817;
@@ -1013,5 +1000,5 @@ footer p {
     .hero p {
         font-size: 14px;
     }
-
 }
+

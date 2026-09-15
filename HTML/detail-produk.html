@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Obat - Apotek Sehat Modern</title>
+    <!-- Animate.css untuk Transisi Elegan -->
+    <link rel="stylesheet" href="https://cloudflare.com"/>
+    
+    <!-- MENGHUBUNGKAN DENGAN FILE CSS TERPISAH YANG BARU -->
+    <link rel="stylesheet" href="../CSS/detail_produk.css">
+</head>
+<body>
+
+    <!-- Navigasi Kembali -->
+    <a href="index.html" class="back-link animate__animated animate__fadeInLeft">← Kembali ke Beranda Apotek</a>
+
+    <!-- Grid Pembungkus Utama -->
+    <div class="product-grid-container">
+        
+        <!-- ================= KOLOM KIRI ================= -->
+        <div class="panel-left animate__animated animate__fadeInLeft">
+            <div class="main-image-box">
+                <img src="https://unsplash.com" alt="Vitamin C 1000mg">
+            </div>
+            
+            <div class="legal-badges">
+                <div class="badge-row">🛡️ <span>Jaminan 100% Produk Original Asli</span></div>
+                <div class="badge-row">📦 <span>Tersegel Aman - Lolos Standar Kemenkes RI</span></div>
+                <div class="badge-row">🧪 <span>Nomor BPOM: DBL2100100200A1</span></div>
+            </div>
+        </div>
+
+        <!-- ================= KOLOM KANAN ================= -->
+        <div class="panel-right animate__animated animate__fadeInRight">
+            
+            <!-- Kartu Utama Produk & Harga -->
+            <div class="card-info-utama">
+                <span class="med-tag">Suplemen Harian</span>
+                <h1 class="title-obat">Vitamin C 1000mg Premium</h1>
+                
+                <div class="rating-row">
+                    <span>⭐⭐⭐⭐⭐ <strong>4.9</strong> (142 Ulasan)</span>
+                    <span>•</span>
+                    <span>Terjual 2.5rb+ produk</span>
+                </div>
+
+                <div class="box-harga-het">
+                    <span class="het-label">Harga Eceran Tertinggi (HET)</span>
+                    <span class="harga-angka">Rp 15.000</span> <span style="color:#636e72; font-size:14px;">/ Strip</span>
+                </div>
+
+                <div class="action-area">
+                    <div class="qty-picker">
+                        <button onclick="ubahJumlah(-1)">-</button>
+                        <input type="text" id="jumlah-beli" value="1" readonly>
+                        <button onclick="ubahJumlah(1)">+</button>
+                    </div>
+                    <button class="btn-beli-hijau">
+                        🛒 Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <!-- Kartu Spesifikasi Medis Resmi -->
+            <div class="card-spesifikasi-medis">
+                <div class="spec-item">
+                    <h4>📋 Indikasi Umum (Manfaat)</h4>
+                    <p>Membantu memelihara daya tahan tubuh, mencukupi kebutuhan Vitamin C harian, serta mempercepat proses pemulihan setelah sakit.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>⚖️ Dosis & Aturan Pakai</h4>
+                    <p>1 tablet sehari. Sebaiknya dikonsumsi setelah makan untuk menjaga kenyamanan lambung.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>⚠️ Efek Samping & Peringatan</h4>
+                    <p>Konsumsi melebihi dosis dapat memicu sakit perut atau diare ringan. Simpan di tempat sejuk di bawah suhu 30°C.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= KOLOM DISKUSI PASIEN (BAWAH) ================= -->
+        <div class="card-diskusi animate__animated animate__fadeInUp">
+            <h3>💬 Ruang Diskusi Obat & Ulasan</h3>
+            
+            <div class="box-input-review">
+                <textarea placeholder="Tuliskan ulasan produk atau pertanyaan seputar dosis obat..."></textarea>
+                <button class="btn-kirim-ulasan">Kirim</button>
+            </div>
+
+            <div class="list-ulasan">
+                <div class="kartu-ulasan">
+                    <div class="ulasan-header">
+                        <strong>Rian Hidayat</strong>
+                        <span class="badge-verified">✓ Pembelian Terverifikasi</span>
+                    </div>
+                    <p style="font-size: 13.5px; color:#636e72; margin-top: 5px;">Pengemasan dari apotek sangat aman berlapis bubble wrap. Expired date masih sangat lama tahun 2029.</p>
+                </div>
+
+                <div class="kartu-ulasan">
+                    <div class="ulasan-header">
+                        <strong>Apoteker Siaga (Apotek Sehat)</strong>
+                        <span style="color: #0984e3; font-weight: 600; font-size:12px;">🏥 Tim Medis Resmi</span>
+                    </div>
+                    <p style="font-size: 13.5px; color:#636e72; margin-top: 5px;">Terima kasih telah berbelanja, kak Rian. Pastikan suplemen dikonsumsi secara rutin pada jam yang sama setiap harinya ya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Mini untuk Counter Jumlah Obat -->
+    <script>
+        function ubahJumlah(nilai) {
+            var input = document.getElementById('jumlah-beli');
+            var jumlahSekarang = parseInt(input.value) + nilai;
+            if (jumlahSekarang >= 1) {
+                input.value = jumlahSekarang;
+            }
+        }
+    </script>
+</body>
+</html>
