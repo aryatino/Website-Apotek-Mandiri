@@ -37,7 +37,7 @@ const produk = {
 
         harga: 5000,
 
-        gambar: "assets/paracetamol.jpg",
+        gambar: "/assets/paracetamol.jpg",
 
         manfaat:
             "Digunakan untuk membantu meredakan demam dan nyeri ringan hingga sedang.",
@@ -59,7 +59,7 @@ const produk = {
 
         harga: 35000,
 
-        gambar: "assets/masker.jpg",
+        gambar: "assets/masker-medis.jpg",
 
         manfaat:
             "Membantu melindungi saluran pernapasan dari debu dan partikel di lingkungan.",
@@ -81,7 +81,7 @@ const produk = {
 
         harga: 25000,
 
-        gambar: "assets/vitamin-d3.jpg",
+        gambar: "assets/vitamin-d3-1000-iu.avif",
 
         manfaat:
             "Membantu memenuhi kebutuhan Vitamin D tubuh.",
@@ -103,7 +103,7 @@ const produk = {
 
         harga: 8000,
 
-        gambar: "assets/antasida.jpg",
+        gambar: "assets/antasida-doen.jpg",
 
         manfaat:
             "Membantu meredakan gejala yang berhubungan dengan kelebihan asam lambung.",
@@ -147,7 +147,7 @@ const produk = {
 
         harga: 18000,
 
-        gambar: "assets/vitamin-b.jpg",
+        gambar: "assets/vitamin-b-complex.avif",
 
         manfaat:
             "Membantu memenuhi kebutuhan beberapa jenis vitamin B dalam tubuh.",
@@ -169,7 +169,7 @@ const produk = {
 
         harga: 10000,
 
-        gambar: "assets/hand-sanitizer.jpg",
+        gambar: "assets/handsanitizer.jpg",
 
         manfaat:
             "Membantu membersihkan tangan ketika air dan sabun tidak tersedia.",
