@@ -182,6 +182,27 @@ const produk = {
 
     }
 
+    "plester-kertas": {
+
+        nama: "Onemed Isopore Plester Kertas Medical",
+
+        kategori: "Kebersihan",
+
+        harga: 12000,
+
+        gambar: "assets/plester-kertas.jpg",
+
+        manfaat:
+            "Membantu membersihkan tangan ketika air dan sabun tidak tersedia.",
+
+        dosis:
+            "Gunakan secukupnya pada permukaan tangan dan gosok hingga kering.",
+
+        peringatan:
+            "Hanya untuk penggunaan luar. Hindari kontak dengan mata."
+
+    }
+
 };
 
 

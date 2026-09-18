@@ -1,504 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Detail Produk - Apotek Sehat</title>
-
 
     <!-- ================================= -->
     <!-- ANIMATE.CSS -->
     <!-- ================================= -->
 
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    >
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- ================================= -->
     <!-- FONT AWESOME -->
     <!-- ================================= -->
 
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- ================================= -->
     <!-- CSS DETAIL PRODUK -->
     <!-- ================================= -->
 
-    <link
-        rel="stylesheet"
-        href="CSS/detail_produk.css"
-    >
+    <link rel="stylesheet" href="CSS/detail_produk.css" />
+  </head>
 
-</head>
-
-
-<body>
-
-
+  <body>
     <!-- ================================= -->
     <!-- NAVIGASI KEMBALI -->
     <!-- ================================= -->
 
     <a
-        href="index.html"
-        class="back-link animate__animated animate__fadeInLeft"
+      href="index.html"
+      class="back-link animate__animated animate__fadeInLeft"
     >
-        ← Kembali ke Beranda Apotek
+      ← Kembali ke Beranda Apotek
     </a>
-
-
 
     <!-- ================================= -->
     <!-- PEMBUNGKUS UTAMA -->
     <!-- ================================= -->
 
     <div class="product-grid-container">
-
-
-        <!-- ================================= -->
-        <!-- KOLOM KIRI
+      <!-- ================================= -->
+      <!-- KOLOM KIRI
         <!-- ================================= -->
 
-        <div
-            class="panel-left animate__animated animate__fadeInLeft"
-        >
+      <div class="panel-left animate__animated animate__fadeInLeft">
+        <!-- GAMBAR PRODUK -->
 
-            <!-- GAMBAR PRODUK -->
-
-            <div class="main-image-box">
-
-                <img
-                    id="gambar-produk"
-                    src="assets/vitamin c.jpeg"
-                    alt="Produk Apotek Sehat"
-                >
-
-            </div>
-
-
-            <!-- BADGE KEAMANAN -->
-
-            <div class="legal-badges">
-
-
-                <div class="badge-row">
-
-                    🛡️
-
-                    <span>
-                        Jaminan Produk Original
-                    </span>
-
-                </div>
-
-
-                <div class="badge-row">
-
-                    📦
-
-                    <span>
-                        Tersegel Aman
-                    </span>
-
-                </div>
-
-
-                <div class="badge-row">
-
-                    🧪
-
-                    <span>
-                        Produk Terdaftar & Terjamin
-                    </span>
-
-                </div>
-
-
-            </div>
-
+        <div class="main-image-box">
+          <img
+            id="gambar-produk"
+            src="assets/vitamin c.jpeg"
+            alt="Produk Apotek Sehat"
+          />
         </div>
 
+        <!-- BADGE KEAMANAN -->
 
+        <div class="legal-badges">
+          <div class="badge-row">
+            🛡️
 
+            <span> Jaminan Produk Original </span>
+          </div>
+
+          <div class="badge-row">
+            📦
+
+            <span> Tersegel Aman </span>
+          </div>
+
+          <div class="badge-row">
+            🧪
+
+            <span> Produk Terdaftar & Terjamin </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================================= -->
+      <!-- KOLOM KANAN
         <!-- ================================= -->
-        <!-- KOLOM KANAN
+
+      <div class="panel-right animate__animated animate__fadeInRight">
         <!-- ================================= -->
-
-        <div
-            class="panel-right animate__animated animate__fadeInRight"
-        >
-
-
-            <!-- ================================= -->
-            <!-- INFORMASI PRODUK
+        <!-- INFORMASI PRODUK
             <!-- ================================= -->
 
-            <div class="card-info-utama">
+        <div class="card-info-utama">
+          <!-- KATEGORI -->
 
+          <span id="kategori-produk" class="med-tag"> Produk </span>
 
-                <!-- KATEGORI -->
+          <!-- NAMA -->
 
-                <span
-                    id="kategori-produk"
-                    class="med-tag"
-                >
-                    Produk
-                </span>
+          <h1 id="nama-produk" class="title-obat">Memuat produk...</h1>
 
+          <!-- RATING -->
 
-                <!-- NAMA -->
+          <div class="rating-row">
+            <span>
+              ⭐⭐⭐⭐⭐
 
-                <h1
-                    id="nama-produk"
-                    class="title-obat"
-                >
-                    Memuat produk...
-                </h1>
+              <strong> 4.9 </strong>
 
+              (142 Ulasan)
+            </span>
 
-                <!-- RATING -->
+            <span> • </span>
 
-                <div class="rating-row">
+            <span> Produk Terjual </span>
+          </div>
 
-                    <span>
+          <!-- ================================= -->
+          <!-- HARGA -->
+          <!-- ================================= -->
 
-                        ⭐⭐⭐⭐⭐
+          <div class="box-harga-het">
+            <span class="het-label"> Harga Produk </span>
 
-                        <strong>
-                            4.9
-                        </strong>
+            <span id="harga-produk" class="harga-angka"> Rp 0 </span>
 
-                        (142 Ulasan)
+            <span style="color: #636e72; font-size: 14px"> / Produk </span>
+          </div>
 
-                    </span>
+          <!-- ================================= -->
+          <!-- JUMLAH + KERANJANG -->
+          <!-- ================================= -->
 
+          <div class="action-area">
+            <!-- JUMLAH -->
 
-                    <span>
-                        •
-                    </span>
+            <div class="qty-picker">
+              <button onclick="ubahJumlah(-1)">-</button>
 
+              <input type="text" id="jumlah-beli" value="1" readonly />
 
-                    <span>
-                        Produk Terjual
-                    </span>
-
-                </div>
-
-
-
-                <!-- ================================= -->
-                <!-- HARGA -->
-                <!-- ================================= -->
-
-                <div class="box-harga-het">
-
-                    <span class="het-label">
-                        Harga Produk
-                    </span>
-
-
-                    <span
-                        id="harga-produk"
-                        class="harga-angka"
-                    >
-                        Rp 0
-                    </span>
-
-
-                    <span
-                        style="
-                            color:#636e72;
-                            font-size:14px;
-                        "
-                    >
-                        / Produk
-                    </span>
-
-                </div>
-
-
-
-                <!-- ================================= -->
-                <!-- JUMLAH + KERANJANG -->
-                <!-- ================================= -->
-
-                <div class="action-area">
-
-
-                    <!-- JUMLAH -->
-
-                    <div class="qty-picker">
-
-
-                        <button
-                            onclick="ubahJumlah(-1)"
-                        >
-                            -
-                        </button>
-
-
-                        <input
-                            type="text"
-                            id="jumlah-beli"
-                            value="1"
-                            readonly
-                        >
-
-
-                        <button
-                            onclick="ubahJumlah(1)"
-                        >
-                            +
-                        </button>
-
-
-                    </div>
-
-
-
-                    <!-- KERANJANG -->
-
-                    <button
-                        class="btn-beli-hijau"
-                        onclick="tambahKeranjang()"
-                    >
-
-                        🛒
-
-                        Tambah ke Keranjang
-
-                    </button>
-
-
-                </div>
-
-
+              <button onclick="ubahJumlah(1)">+</button>
             </div>
 
+            <!-- KERANJANG -->
 
-
-            <!-- ================================= -->
-            <!-- SPESIFIKASI MEDIS -->
-            <!-- ================================= -->
-
-            <div class="card-spesifikasi-medis">
-
-
-                <!-- MANFAAT -->
-
-                <div class="spec-item">
-
-                    <h4>
-                        📋 Indikasi Umum (Manfaat)
-                    </h4>
-
-
-                    <p id="manfaat-produk">
-
-                        Memuat informasi...
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- DOSIS -->
-
-                <div class="spec-item">
-
-                    <h4>
-                        ⚖️ Dosis & Aturan Pakai
-                    </h4>
-
-
-                    <p id="dosis-produk">
-
-                        Memuat informasi...
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- PERINGATAN -->
-
-                <div class="spec-item">
-
-                    <h4>
-                        ⚠️ Efek Samping & Peringatan
-                    </h4>
-
-
-                    <p id="peringatan-produk">
-
-                        Memuat informasi...
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
-
+            <button class="btn-beli-hijau" onclick="tambahKeranjang()">
+              🛒 Tambah ke Keranjang
+            </button>
+          </div>
         </div>
 
-
-
         <!-- ================================= -->
-        <!-- DISKUSI & ULASAN -->
+        <!-- SPESIFIKASI MEDIS -->
         <!-- ================================= -->
 
-        <div
-            class="card-diskusi animate__animated animate__fadeInUp"
-        >
+        <div class="card-spesifikasi-medis">
+          <!-- MANFAAT -->
 
+          <div class="spec-item">
+            <h4>📋 Indikasi Umum (Manfaat)</h4>
 
-            <h3>
-                💬 Ruang Diskusi Obat & Ulasan
-            </h3>
+            <p id="manfaat-produk">Memuat informasi...</p>
+          </div>
 
+          <!-- DOSIS -->
 
+          <div class="spec-item">
+            <h4>⚖️ Dosis & Aturan Pakai</h4>
 
-            <!-- INPUT ULASAN -->
+            <p id="dosis-produk">Memuat informasi...</p>
+          </div>
 
-            <div class="box-input-review">
+          <!-- PERINGATAN -->
 
+          <div class="spec-item">
+            <h4>⚠️ Efek Samping & Peringatan</h4>
 
-                <textarea
-                    id="input-ulasan"
-                    placeholder="Tuliskan ulasan produk atau pertanyaan seputar produk..."
-                ></textarea>
+            <p id="peringatan-produk">Memuat informasi...</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- ================================= -->
+      <!-- DISKUSI & ULASAN -->
+      <!-- ================================= -->
 
-                <button
-                    class="btn-kirim-ulasan"
-                    onclick="kirimUlasan()"
-                >
-                    Kirim
-                </button>
+      <div class="card-diskusi animate__animated animate__fadeInUp">
+        <h3>💬 Ruang Diskusi Obat & Ulasan</h3>
 
+        <!-- INPUT ULASAN -->
 
-            </div>
+        <div class="box-input-review">
+          <textarea
+            id="input-ulasan"
+            placeholder="Tuliskan ulasan produk atau pertanyaan seputar produk..."
+          ></textarea>
 
-
-
-            <!-- ================================= -->
-            <!-- ULASAN -->
-            <!-- ================================= -->
-
-            <div class="list-ulasan">
-
-
-                <div class="kartu-ulasan">
-
-
-                    <div class="ulasan-header">
-
-                        <strong>
-                            Pelanggan Apotek
-                        </strong>
-
-
-                        <span class="badge-verified">
-
-                            ✓ Pembelian Terverifikasi
-
-                        </span>
-
-                    </div>
-
-
-                    <p
-                        style="
-                            font-size:13.5px;
-                            color:#636e72;
-                            margin-top:5px;
-                        "
-                    >
-
-                        Produk sampai dengan aman dan
-                        dikemas dengan baik.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="kartu-ulasan">
-
-
-                    <div class="ulasan-header">
-
-                        <strong>
-                            Apoteker Siaga
-                        </strong>
-
-
-                        <span
-                            style="
-                                color:#0984e3;
-                                font-weight:600;
-                                font-size:12px;
-                            "
-                        >
-                            🏥 Tim Apotek
-                        </span>
-
-                    </div>
-
-
-                    <p
-                        style="
-                            font-size:13.5px;
-                            color:#636e72;
-                            margin-top:5px;
-                        "
-                    >
-
-                        Jika memiliki pertanyaan mengenai
-                        penggunaan produk, silakan
-                        konsultasikan terlebih dahulu
-                        dengan apoteker.
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
-
+          <button class="btn-kirim-ulasan" onclick="kirimUlasan()">
+            Kirim
+          </button>
         </div>
 
+        <!-- ================================= -->
+        <!-- ULASAN -->
+        <!-- ================================= -->
 
+        <div class="list-ulasan">
+          <div class="kartu-ulasan">
+            <div class="ulasan-header">
+              <strong> Pelanggan Apotek </strong>
+
+              <span class="badge-verified"> ✓ Pembelian Terverifikasi </span>
+            </div>
+
+            <p style="font-size: 13.5px; color: #636e72; margin-top: 5px">
+              Produk sampai dengan aman dan dikemas dengan baik.
+            </p>
+          </div>
+
+          <div class="kartu-ulasan">
+            <div class="ulasan-header">
+              <strong> Apoteker Siaga </strong>
+
+              <span style="color: #0984e3; font-weight: 600; font-size: 12px">
+                🏥 Tim Apotek
+              </span>
+            </div>
+
+            <p style="font-size: 13.5px; color: #636e72; margin-top: 5px">
+              Jika memiliki pertanyaan mengenai penggunaan produk, silakan
+              konsultasikan terlebih dahulu dengan apoteker.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
+    
     <!-- ================================= -->
     <!-- JAVASCRIPT -->
     <!-- ================================= -->
 
     <script src="JS/detail_produk.js"></script>
-
-
-</body>
-
+  </body>
 </html>

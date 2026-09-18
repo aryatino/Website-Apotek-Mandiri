@@ -12,12 +12,14 @@
       href="../CSS/style.css"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <!-- CSS Lokal -->
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/search-filter.css">
+
   </head>
 
   <body>
@@ -137,180 +139,237 @@
 
     <section id="produk" class="products">
       <div class="section-title">
+        <!-- ================= BAGIAN PENCARIAN & FILTER KATEGORI ================= -->
+        <div class="search-filter-section animate__animated animate__fadeInUp">
+          <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Cari obat, vitamin, atau alat kesehatan..."
+            />
+          </div>
+
+          <div class="filter-container">
+            <button class="filter-btn active" data-category="semua">
+              💊 Semua
+            </button>
+            <button class="filter-btn" data-category="vitamin">
+              🍏 Vitamin
+            </button>
+            <button class="filter-btn" data-category="obat-bebas">
+              🤒 Obat Bebas
+            </button>
+            <button class="filter-btn" data-category="alkes">
+              🩺 Alat Kesehatan
+            </button>
+          </div>
+        </div>
+
         <h2>Produk Populer</h2>
 
         <p>Sediaan obat dan vitamin yang paling banyak dibutuhkan.</p>
       </div>
 
-     <div class="product-grid">
+      <div class="product-grid">
+        <!-- PRODUK 1 -->
+        <div class="product-card" data-name= "vitamin c 1000mg " data-category="vitamin">
+          <span class="category">Vitamin</span>
 
-  <!-- PRODUK 1 -->
-  <div class="product-card">
-    <span class="category">Vitamin</span>
+          <h3>Vitamin C 1000mg</h3>
 
-    <h3>Vitamin C 1000mg</h3>
+          <p class="price">Rp 15.000</p>
 
-    <p class="price">Rp 15.000</p>
+          <a href="detail_produk.html?id=vitamin-c" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
-    <a
-      href="detail_produk.html?id=vitamin-c"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
+        <!-- PRODUK 2 -->
+        <div class="product-card" data-name="paracetamol 500mg" data-category="obat-bebas">
+          <span class="category">Obat Bebas</span>
 
+          <h3>Paracetamol 500mg</h3>
 
-  <!-- PRODUK 2 -->
-  <div class="product-card">
-    <span class="category">Obat Bebas</span>
+          <p class="price">Rp 5.000</p>
 
-    <h3>Paracetamol 500mg</h3>
+          <a href="detail_produk.html?id=paracetamol" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
-    <p class="price">Rp 5.000</p>
+        <!-- PRODUK 3 -->
+        <div class="product-card" data-name="masker medis 3-ply" data-category="alkes">
+          <span class="category">Alat Kesehatan</span>
 
-    <a
-      href="detail_produk.html?id=paracetamol"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
+          <h3>Masker Medis 3-Ply</h3>
 
+          <p class="price">Rp 35.000</p>
 
-  <!-- PRODUK 3 -->
-  <div class="product-card">
-    <span class="category">Alat Kesehatan</span>
+          <a href="detail_produk.html?id=masker" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
-    <h3>Masker Medis 3-Ply</h3>
+        <!-- PRODUK 4 -->
+        <div class="product-card" data-name="vitamin d3 1000 iu" data-category="vitamin">
+          <span class="category">Vitamin</span>
 
-    <p class="price">Rp 35.000</p>
+          <h3>Vitamin D3 1000 IU</h3>
 
-    <a
-      href="detail_produk.html?id=masker"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
+          <p class="price">Rp 25.000</p>
 
+          <a href="detail_produk.html?id=vitamin-d3" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
-  <!-- PRODUK 4 -->
-  <div class="product-card">
-    <span class="category">Vitamin</span>
+        <!-- PRODUK 5 -->
+        <div class="product-card" data-name="antasida doen" data-category="obat-bebas">
+          <span class="category">Obat Bebas</span>
 
-    <h3>Vitamin D3 1000 IU</h3>
+          <h3>Antasida Doen</h3>
 
-    <p class="price">Rp 25.000</p>
+          <p class="price">Rp 8.000</p>
 
-    <a
-      href="detail_produk.html?id=vitamin-d3"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
+          <a href="detail_produk.html?id=antasida" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
+        <!-- PRODUK 6 -->
+        <div class="product-card" data-name="ibuprofen 200mg" data-category="obat-bebas">
+          <span class="category">Obat Bebas</span>
 
-  <!-- PRODUK 5 -->
-  <div class="product-card">
-    <span class="category">Obat Bebas</span>
+          <h3>Ibuprofen 200mg</h3>
 
-    <h3>Antasida Doen</h3>
+          <p class="price">Rp 12.000</p>
 
-    <p class="price">Rp 8.000</p>
+          <a href="detail_produk.html?id=ibuprofen" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
-    <a
-      href="detail_produk.html?id=antasida"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
+        <!-- PRODUK 7 -->
+        <div class="product-card" data-name="vitamin b complex" data-category="vitamin">
+          <span class="category">Vitamin</span>
 
+          <h3>Vitamin B Complex</h3>
 
-  <!-- PRODUK 6 -->
-  <div class="product-card">
-    <span class="category">Obat Bebas</span>
+          <p class="price">Rp 18.000</p>
 
-    <h3>Ibuprofen 200mg</h3>
+          <a href="detail_produk.html?id=vitamin-b" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
-    <p class="price">Rp 12.000</p>
+        <!-- PRODUK 8 -->
+        <div class="product-card" data-name="hand sanitizer 100ml" data-category="alkes"x>
+          <span class="category">Alat Kesehatan</span>
 
-    <a
-      href="detail_produk.html?id=ibuprofen"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
+          <h3>Hand Sanitizer 100ml</h3>
 
+          <p class="price">Rp 10.000</p>
 
-  <!-- PRODUK 7 -->
-  <div class="product-card">
-    <span class="category">Vitamin</span>
+          <a href="detail_produk.html?id=hand-sanitizer" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
 
-    <h3>Vitamin B Complex</h3>
+        <!-- PRODUK 9 -->
+        <div class="product-card" data-name="plester kertas" data-category="alkes"x>
+          <span class="category">Alat Kesehatan</span>
 
-    <p class="price">Rp 18.000</p>
+          <h3>Onemed Isopore Plester Kertas Medical</h3>
 
-    <a
-      href="detail_produk.html?id=vitamin-b"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
+          <p class="price">Rp 12.000</p>
 
+          <a href="detail_produk.html?id=onemed-isopore-plester-kertas-medical" class="btn-product">
+            Lihat Detail
+          </a>
+        </div>
+      </div>
+  </section>
 
-  <!-- PRODUK 8 -->
-  <div class="product-card">
-    <span class="category">Alat Kesehatan</span>
-
-    <h3>Hand Sanitizer 100ml</h3>
-
-    <p class="price">Rp 10.000</p>
-
-    <a
-      href="detail_produk.html?id=hand-sanitizer"
-      class="btn-product"
-    >
-      Lihat Detail
-    </a>
-  </div>
-
-</div>
-    </section>
-   <!-- ========================= -->
-<!-- FLOATING WHATSAPP -->
-<!-- ========================= -->
-<a
-  href = "https://wa.me/081515080486"
-  target="_blank"
-  class="whatsapp-float"
-  aria-label="Hubungi Apotek Sehat melalui WhatsApp"
->
-  <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
-
-  <span class="whatsapp-text">
-    Hubungi Kami
-  </span>
-</a>
-
+    
     <!-- ========================= -->
-    <!-- FOOTER -->
+    <!-- FLOATING WHATSAPP -->
     <!-- ========================= -->
+    <a
+      href="https://wa.me/081515080486"
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Hubungi Apotek Sehat melalui WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
 
-    <footer id="kontak">
-      <div class="footer-content">
+      <span class="whatsapp-text"> Hubungi Kami </span>
+    </a>
+
+    <!-- ================= FOOTER MODERN & MEDIS ================= -->
+    <footer class="main-footer animate__animated animate__fadeInUp">
+      <div class="footer-container">
+        <!-- Kolom 1: Profil Apotek -->
+        <div class="footer-column">
+          <div class="footer-logo">🏥 Apotek<span>Sehat</span></div>
+          <p class="footer-about">
+            Layanan farmasi digital terpercaya yang mengutamakan keaslian obat,
+            kecepatan pengiriman, dan keselamatan pasien di bawah pengawasan
+            apoteker berlisensi.
+          </p>
+          <div class="legal-tag">SIA: 442/001/Apotek/2026</div>
+        </div>
+
+        <!-- Kolom 2: Tautan Navigasi -->
+        <div class="footer-column">
+          <h4>Layanan Pasien</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#produk">Cari Obat & Vitamin</a></li>
+            <li><a href="#layanan">Konsultasi Apoteker</a></li>
+            <li><a href="#">Syarat & Ketentuan K3</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Kontak & Jam Operasional -->
+        <div class="footer-column">
+          <h4>Hubungi Kami</h4>
+          <p class="footer-contact">
+            📞 Emergency Call: <strong>1500-MEDIC</strong>
+          </p>
+          <p class="footer-contact">
+            💬 WhatsApp: <strong>0812-3456-7890</strong>
+          </p>
+          <p class="footer-contact">
+            ⏰ Jam Operasional: <br />Senin - Minggu (24 Jam Siaga)
+          </p>
+        </div>
+
+        <!-- Kolom 4: Regulasi & Sertifikasi -->
+        <div class="footer-column">
+          <h4>Regulasi & Keamanan</h4>
+          <p class="footer-about">
+            Seluruh sediaan obat dan alat kesehatan yang kami jual telah lulus
+            uji klinis dan terdaftar resmi di:
+          </p>
+          <div class="gov-badges">
+            <span class="badge-gov">BPOM RI</span>
+            <span class="badge-gov">KEMENKES</span>
+            <span class="badge-gov">HALAL MUI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Hak Cipta -->
+      <div class="footer-bottom">
         <p>
-          &copy; 2026 Apotek Sehat. Sesuai standar Kemenkes & Badan Pengawas
-          Obat.
+          &copy; 2026 Apotek Sehat Digital. Dilindungi Hukum. Seluruh informasi
+          medis disadur sesuai pedoman Formularium Nasional.
         </p>
       </div>
     </footer>
 
     <!-- JavaScript Lokal -->
-    <script src="/JS/script.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>

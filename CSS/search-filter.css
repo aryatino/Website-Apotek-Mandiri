@@ -1,0 +1,97 @@
+/* ==========================================================================
+   CSS PENCARIAN & FILTER MODERN - APOTEK DIGITAL
+   ========================================================================== */
+
+.search-filter-section {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Kotak Pencarian Pintar */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #a4b0be;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 16px 20px 16px 55px;
+    border-radius: 50px;
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+/* Efek saat kolom pencarian diklik */
+.search-container input:focus {
+    border-color: #00b894;
+    box-shadow: 0 10px 25px rgba(0, 184, 148, 0.1);
+}
+
+/* Pembungkus Tombol Filter Kategori */
+.filter-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Tombol Kategori Minimalis */
+.filter-btn {
+    background-color: #ffffff;
+    color: #2d3436;
+    border: 1px solid #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+/* Efek Hover Kategori */
+.filter-btn:hover {
+    border-color: #00b894;
+    color: #00b894;
+    transform: translateY(-1px);
+}
+
+/* Gaya Tombol Kategori yang Sedang Aktif/Dipilih */
+.filter-btn.active {
+    background-color: #00b894;
+    color: #ffffff;
+    border-color: #00b894;
+    font-weight: 600;
+    box-shadow: 0 6px 14px rgba(0, 184, 148, 0.2);
+}
+
+/* Responsif untuk Layar Handphone */
+@media (max-width: 550px) {
+    .filter-container {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
