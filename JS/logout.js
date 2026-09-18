@@ -19,7 +19,7 @@ if (logoutButton) {
         localStorage.removeItem("username");
 
         // Kembali ke halaman login
-        window.location.href = "login_screen.html";
+        window.location.href = "index.html";
 
     });
 

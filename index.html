@@ -1,65 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="id">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<title>Apotek Sehat - Solusi Medis Modern</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<!-- =====================================================
-     PROTEKSI LOGIN
-     ===================================================== -->
+<title>Login - Apotek Sehat</title>
 
-<script>
-
-    // Cek apakah user sudah login
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-
-    // Kalau belum login,
-    // arahkan ke halaman login
-    if (isLoggedIn !== "true") {
-        window.location.replace("login.html");
-    }
-
-</script>
-
-
-<!-- Animate.css -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
->
-
-
-<!-- Font Awesome -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
->
-
-
-<!-- CSS Lokal -->
-<link
-    rel="stylesheet"
-    href="/CSS/style.css"
->
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
-    href="/CSS/search-filter.css"
 >
-<link
-    rel="stylesheet"
-    href="/CSS/logout.css"
->
+
+<!-- CSS Login -->
+<link rel="stylesheet" href="/CSS/login.css">
 
 
 </head>
@@ -67,763 +27,199 @@
 <body>
 
 
-<!-- ========================= -->
-<!-- NAVBAR -->
-<!-- ========================= -->
+<!-- Background Decoration -->
+<div class="bg-circle circle-one"></div>
+<div class="bg-circle circle-two"></div>
 
-<header class="animate__animated animate__fadeInDown">
+<main class="login-page">
 
-    <div class="header-content">
+    <!-- Bagian kiri -->
+    <section class="login-info">
 
-        <!-- Logo -->
-        <div class="logo">
-            🏥 Apotek<span>Sehat</span>
+        <div class="brand">
+            <div class="brand-icon">✚</div>
+
+            <span>
+                Apotek<span>Sehat</span>
+            </span>
         </div>
 
+        <div class="info-content">
 
-        <!-- Menu -->
-        <nav>
+            <p class="small-title">
+                APOTEK SEHAT MODERN
+            </p>
 
-            <a href="#home">
-                Beranda
-            </a>
+            <h1>
+                Kesehatan Anda,<br>
+                <span>prioritas kami.</span>
+            </h1>
 
-            <a href="#layanan">
-                Layanan
-            </a>
+            <p class="description">
+                Kelola kebutuhan kesehatan Anda dengan mudah,
+                aman, dan nyaman bersama Apotek Sehat.
+            </p>
 
-            <a href="#produk">
-                Produk
-            </a>
+            <div class="features">
 
-              <!-- LOGOUT -->
-    
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <div>
+                        <strong>Pelayanan terpercaya</strong>
+                        <p>Informasi kesehatan yang mudah diakses.</p>
+                    </div>
+                </div>
 
-        </nav>
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <div>
+                        <strong>Praktis dan nyaman</strong>
+                        <p>Akses layanan kapan saja.</p>
+                    </div>
+                </div>
 
-<div class="cta-header">
-
-    <a
-        href="https://wa.me/081515080486"
-        class="btn-secondary"
-        target="_blank"
-    >
-        Hubungi Apoteker
-    </a>
-
-    <!-- Tombol Logout -->
-    <button
-        type="button"
-        id="logoutButton"
-        class="logout-btn"
-    >
-        <span class="logout-icon">↪</span>
-        <span>Logout</span>
-    </button>
-
-</div>
-
-</header>
-
-
-<!-- ========================= -->
-<!-- HERO -->
-<!-- ========================= -->
-
-<section id="home" class="hero">
-
-
-    <!-- Video Background -->
-    <video
-        autoplay
-        muted
-        loop
-        playsinline
-        class="hero-video"
-    >
-
-        <source
-            src="../assets/Dokter-video.mp4"
-            type="video/mp4"
-        >
-
-        Browser Anda tidak mendukung video.
-
-    </video>
-
-
-    <!-- Overlay -->
-    <div class="hero-overlay"></div>
-
-
-    <!-- Isi Hero -->
-    <div class="hero-content animate__animated animate__fadeInLeft">
-
-        <!-- Badge -->
-        <span class="badge">
-            Standar Pelayanan Medis 2026
-        </span>
-
-
-        <!-- Judul -->
-        <h1>
-
-            Akses Obat Asli &
-            <br>
-
-            Konsultasi Medis Terpercaya
-
-        </h1>
-
-
-        <!-- Deskripsi -->
-        <p>
-
-            Kami hadir dengan konsep apotek digital yang
-            mengutamakan kecepatan, keamanan, dan keaslian
-            produk kesehatan untuk keluarga Anda.
-
-        </p>
-
-
-        <!-- Tombol -->
-        <div class="hero-buttons">
-
-            <a
-                href="#produk"
-                class="btn-primary"
-            >
-                Cari Obat
-            </a>
-
-
-            <a
-                href="#layanan"
-                class="btn-link"
-            >
-                Pelajari Selengkapnya →
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ========================= -->
-<!-- LAYANAN -->
-<!-- ========================= -->
-
-<section id="layanan" class="features">
-
-
-    <div class="section-title">
-
-        <h2>
-            Mengapa Memilih Kami?
-        </h2>
-
-        <p>
-            Seluruh operasional kami berjalan di bawah
-            pengawasan apoteker berlisensi.
-        </p>
-
-    </div>
-
-
-    <div class="feature-grid">
-
-
-        <!-- Card 1 -->
-        <div class="feature-card">
-
-            <div class="icon">
-                🛡️
             </div>
 
-            <h3>
-                100% Obat Asli
-            </h3>
+        </div>
+
+    </section>
+
+
+    <!-- Bagian kanan -->
+    <section class="login-card">
+
+        <div class="card-header">
+
+            <div class="mobile-logo">
+                ✚
+            </div>
+
+            <h2>Selamat datang kembali 👋</h2>
 
             <p>
-                Suplai langsung dari distributor resmi
-                dan tersegel aman.
+                Silakan masuk ke akun Anda untuk melanjutkan.
             </p>
 
         </div>
 
 
-        <!-- Card 2 -->
-        <div class="feature-card">
+        <form id="loginForm">
 
-            <div class="icon">
-                👨‍⚕️
+            <!-- Username -->
+            <div class="form-group">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <div class="input-wrapper">
+
+                    <span class="input-icon">👤</span>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Masukkan username"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
             </div>
 
-            <h3>
-                Apoteker Siaga
-            </h3>
+
+            <!-- Password -->
+            <div class="form-group">
+
+                <div class="password-label">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <a href="#" id="forgotPassword">
+                        Lupa password?
+                    </a>
+
+                </div>
+
+                <div class="input-wrapper">
+
+                    <span class="input-icon">🔒</span>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Masukkan password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        id="togglePassword"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Remember -->
+            <div class="remember">
+
+                <label>
+                    <input type="checkbox" id="remember">
+                    <span>Ingat saya</span>
+                </label>
+
+            </div>
+
+
+            <!-- Login Button -->
+            <button
+                type="submit"
+                class="login-button"
+            >
+                <span>Masuk ke akun</span>
+                <span class="arrow">→</span>
+            </button>
+
+        </form>
+
+
+        <!-- Register -->
+        <div class="register">
 
             <p>
-                Konsultasi dosis dan aturan pakai
-                tanpa biaya tambahan.
+                Belum punya akun?
+                <a href="register.html">Daftar sekarang</a>
             </p>
 
         </div>
 
 
-        <!-- Card 3 -->
-        <div class="feature-card">
+        <div class="security">
 
-            <div class="icon">
-                ⚡
-            </div>
-
-            <h3>
-                Pengiriman Instan
-            </h3>
+            <span>🔐</span>
 
             <p>
-                Sistem antar cepat untuk kebutuhan
-                medis darurat Anda.
+                Data Anda dilindungi dengan aman
             </p>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+</main>
 
 
-<!-- ========================= -->
-<!-- PRODUK -->
-<!-- ========================= -->
-
-<section id="produk" class="products">
-
-
-    <div class="section-title">
-
-
-        <!-- PENCARIAN & FILTER -->
-
-        <div
-            class="search-filter-section animate__animated animate__fadeInUp"
-        >
-
-            <div class="search-container">
-
-                <span class="search-icon">
-                    🔍
-                </span>
-
-                <input
-                    type="text"
-                    id="search-input"
-                    placeholder="Cari obat, vitamin, atau alat kesehatan..."
-                >
-
-            </div>
-
-
-            <div class="filter-container">
-
-                <button
-                    class="filter-btn active"
-                    data-category="semua"
-                >
-                    💊 Semua
-                </button>
-
-                <button
-                    class="filter-btn"
-                    data-category="vitamin"
-                >
-                    🍏 Vitamin
-                </button>
-
-                <button
-                    class="filter-btn"
-                    data-category="obat-bebas"
-                >
-                    🤒 Obat Bebas
-                </button>
-
-                <button
-                    class="filter-btn"
-                    data-category="alkes"
-                >
-                    🩺 Alat Kesehatan
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <h2>
-            Produk Populer
-        </h2>
-
-        <p>
-            Sediaan obat dan vitamin yang paling banyak dibutuhkan.
-        </p>
-
-    </div>
-
-
-    <div class="product-grid">
-
-
-        <!-- PRODUK 1 -->
-        <div
-            class="product-card"
-            data-name="vitamin c 1000mg"
-            data-category="vitamin"
-        >
-
-            <span class="category">
-                Vitamin
-            </span>
-
-            <h3>
-                Vitamin C 1000mg
-            </h3>
-
-            <p class="price">
-                Rp 15.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=vitamin-c"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 2 -->
-        <div
-            class="product-card"
-            data-name="paracetamol 500mg"
-            data-category="obat-bebas"
-        >
-
-            <span class="category">
-                Obat Bebas
-            </span>
-
-            <h3>
-                Paracetamol 500mg
-            </h3>
-
-            <p class="price">
-                Rp 5.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=paracetamol"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 3 -->
-        <div
-            class="product-card"
-            data-name="masker medis 3-ply"
-            data-category="alkes"
-        >
-
-            <span class="category">
-                Alat Kesehatan
-            </span>
-
-            <h3>
-                Masker Medis 3-Ply
-            </h3>
-
-            <p class="price">
-                Rp 35.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=masker"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 4 -->
-        <div
-            class="product-card"
-            data-name="vitamin d3 1000 iu"
-            data-category="vitamin"
-        >
-
-            <span class="category">
-                Vitamin
-            </span>
-
-            <h3>
-                Vitamin D3 1000 IU
-            </h3>
-
-            <p class="price">
-                Rp 25.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=vitamin-d3"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 5 -->
-        <div
-            class="product-card"
-            data-name="antasida doen"
-            data-category="obat-bebas"
-        >
-
-            <span class="category">
-                Obat Bebas
-            </span>
-
-            <h3>
-                Antasida Doen
-            </h3>
-
-            <p class="price">
-                Rp 8.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=antasida"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 6 -->
-        <div
-            class="product-card"
-            data-name="ibuprofen 200mg"
-            data-category="obat-bebas"
-        >
-
-            <span class="category">
-                Obat Bebas
-            </span>
-
-            <h3>
-                Ibuprofen 200mg
-            </h3>
-
-            <p class="price">
-                Rp 12.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=ibuprofen"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 7 -->
-        <div
-            class="product-card"
-            data-name="vitamin b complex"
-            data-category="vitamin"
-        >
-
-            <span class="category">
-                Vitamin
-            </span>
-
-            <h3>
-                Vitamin B Complex
-            </h3>
-
-            <p class="price">
-                Rp 18.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=vitamin-b"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 8 -->
-        <div
-            class="product-card"
-            data-name="hand sanitizer 100ml"
-            data-category="alkes"
-        >
-
-            <span class="category">
-                Alat Kesehatan
-            </span>
-
-            <h3>
-                Hand Sanitizer 100ml
-            </h3>
-
-            <p class="price">
-                Rp 10.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=hand-sanitizer"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-
-        <!-- PRODUK 9 -->
-        <div
-            class="product-card"
-            data-name="onemed isopore plester kertas medical"
-            data-category="alkes"
-        >
-
-            <span class="category">
-                Alat Kesehatan
-            </span>
-
-            <h3>
-                Onemed Isopore Plester Kertas Medical
-            </h3>
-
-            <p class="price">
-                Rp 12.000
-            </p>
-
-            <a
-                href="detail_produk.html?id=onemed-isopore-plester-kertas-medical"
-                class="btn-product"
-            >
-                Lihat Detail
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ========================= -->
-<!-- FLOATING WHATSAPP -->
-<!-- ========================= -->
-
-<a
-    href="https://wa.me/081515080486"
-    target="_blank"
-    class="whatsapp-float"
-    aria-label="Hubungi Apotek Sehat melalui WhatsApp"
->
-
-    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
-
-    <span class="whatsapp-text">
-        Hubungi Kami
-    </span>
-
-</a>
-
-
-<!-- ========================= -->
-<!-- FOOTER -->
-<!-- ========================= -->
-
-<footer
-    class="main-footer animate__animated animate__fadeInUp"
->
-
-    <div class="footer-container">
-
-
-        <!-- Kolom 1 -->
-        <div class="footer-column">
-
-            <div class="footer-logo">
-                🏥 Apotek<span>Sehat</span>
-            </div>
-
-            <p class="footer-about">
-
-                Layanan farmasi digital terpercaya yang
-                mengutamakan keaslian obat, kecepatan
-                pengiriman, dan keselamatan pasien di
-                bawah pengawasan apoteker berlisensi.
-
-            </p>
-
-            <div class="legal-tag">
-                SIA: 442/001/Apotek/2026
-            </div>
-
-        </div>
-
-
-        <!-- Kolom 2 -->
-        <div class="footer-column">
-
-            <h4>
-                Layanan Pasien
-            </h4>
-
-            <ul class="footer-links">
-
-                <li>
-                    <a href="#home">
-                        Beranda
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#produk">
-                        Cari Obat & Vitamin
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#layanan">
-                        Konsultasi Apoteker
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Syarat & Ketentuan K3
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- Kolom 3 -->
-        <div class="footer-column">
-
-            <h4>
-                Hubungi Kami
-            </h4>
-
-            <p class="footer-contact">
-                📞 Emergency Call:
-                <strong>1500-MEDIC</strong>
-            </p>
-
-            <p class="footer-contact">
-                💬 WhatsApp:
-                <strong>0815-1508-0486</strong>
-            </p>
-
-            <p class="footer-contact">
-
-                ⏰ Jam Operasional:
-                <br>
-
-                Senin - Minggu (24 Jam Siaga)
-
-            </p>
-
-        </div>
-
-
-        <!-- Kolom 4 -->
-        <div class="footer-column">
-
-            <h4>
-                Regulasi & Keamanan
-            </h4>
-
-            <p class="footer-about">
-
-                Seluruh sediaan obat dan alat kesehatan
-                yang kami jual telah lulus uji klinis
-                dan terdaftar resmi di:
-
-            </p>
-
-
-            <div class="gov-badges">
-
-                <span class="badge-gov">
-                    BPOM RI
-                </span>
-
-                <span class="badge-gov">
-                    KEMENKES
-                </span>
-
-                <span class="badge-gov">
-                    HALAL MUI
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- Hak Cipta -->
-    <div class="footer-bottom">
-
-        <p>
-
-            &copy; 2026 Apotek Sehat Digital.
-            Dilindungi Hukum. Seluruh informasi
-            medis disadur sesuai pedoman
-            Formularium Nasional.
-
-        </p>
-
-    </div>
-
-</footer>
-
-
-<!-- =====================================================
-     JAVASCRIPT LOKAL
-     ===================================================== -->
-
-<script src="/JS/script.js"></script>
-<script src="/JS/logout.js"></script>
-
-
+<!-- JavaScript Login -->
+<script src="/JS/login.js"></script>
 
 
 </body>

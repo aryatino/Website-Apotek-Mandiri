@@ -53,7 +53,7 @@ loginForm.addEventListener("submit", function (event) {
         alert("Login berhasil! Selamat datang di Apotek Sehat.");
 
         // Masuk ke halaman utama
-        window.location.href = "index.html";
+        window.location.href = "home_screen.html";
 
     } else {
 
