@@ -180,7 +180,7 @@ const produk = {
         peringatan:
             "Hanya untuk penggunaan luar. Hindari kontak dengan mata."
 
-    }
+    },
 
     "plester-kertas": {
 
