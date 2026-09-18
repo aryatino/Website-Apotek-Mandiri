@@ -193,13 +193,13 @@ const produk = {
         gambar: "assets/plester-kertas.jpg",
 
         manfaat:
-            "Membantu membersihkan tangan ketika air dan sabun tidak tersedia.",
+            "Membantu menutup luka kecil dan melindungi dari kotoran serta bakteri.",
 
         dosis:
-            "Gunakan secukupnya pada permukaan tangan dan gosok hingga kering.",
+            "Gunakan secukupnya pada permukaan kulit yang bersih dan kering.",
 
         peringatan:
-            "Hanya untuk penggunaan luar. Hindari kontak dengan mata."
+            "Hanya untuk penggunaan luar. Ganti plester secara berkala dan hindari penggunaan pada luka yang terinfeksi."
 
     }
 
